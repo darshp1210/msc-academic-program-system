@@ -1,0 +1,241 @@
+/* Reset default margin and padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Center the container horizontally and add background color */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #99e6e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+/* Header styles for responsiveness */
+header {
+    background-color: #00b3b3;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+/* Footer styles for responsiveness */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00b3b3;
+    color: #000;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* Navigation styles */
+nav {
+    text-align: center;
+    background-color: #99e6e6;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00b3b3;
+}
+
+/* Content styles */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text {
+    flex: 1;
+    max-width: 100%;
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form box styles */
+.form-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Button styles */
+.send-button, button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Login form styles */
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    padding: 20px;
+}
+
+.login-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Forgot password link style */
+.forgot-password-link {
+    margin-top: 10px;
+}
+
+/* Services section styles */
+.services-section {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.services-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.service {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Image grid styles */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.grid-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Media Queries for iPhone and Mobile Devices */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+
+    /* Example: Reduce padding and margins */
+    .container {
+        padding: 10px;
+    }
+
+    /* Example: Reduce font sizes */
+    h1 {
+        font-size: 1.5em;
+    }
+nav {
+        display: block; /* Show the navigation */
+    }
+
+    nav a {
+        font-size: 14px; /* Reduce the font size for navigation items */
+    }
+
+    /* Make the last nav button wrap to a new line */
+    nav a:last-child {
+        display: block;
+    }
+    /* Add more responsive styles as needed */
+}
+
